@@ -1,3 +1,9 @@
+def turn(board)
+  puts "Please enter 1-9:"
+  get input
+  move(board, input)
+end
+
 def display_board
   puts " #{board[0]} | #{board[1]} | #{board[2]} "
   puts "-----------"
