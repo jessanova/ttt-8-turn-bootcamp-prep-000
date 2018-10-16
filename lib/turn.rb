@@ -32,7 +32,7 @@ def move(board, index)
 end
 
 def input_to_index(input)
-  input.to_i
+  input=input.to_i
   index=input-1
   return index
 end
