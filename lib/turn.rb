@@ -1,5 +1,7 @@
 def display_board
-  
+  puts "   |   |   "
+  puts "   |   |   "
+  puts "   |   |   "
 end
 
 def valid_move?(board,index)
