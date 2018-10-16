@@ -28,7 +28,7 @@ def move(board, index)
     board[index]="X"
     return board
   end
-  #turn(board)
+  turn(board)
 end
 
 def input_to_index(input)
