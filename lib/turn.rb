@@ -3,6 +3,7 @@ def turn(board)
   gets input
   index=input_to_index(input)
   move(board, index)
+  display_board(board)
 end
 
 def display_board(board)
@@ -25,7 +26,9 @@ end
 def move(board, index)
   if(valid_move?(board,index))
     board[index]="X"
+    return board
   end
+  turn(board)
 end
 
 def input_to_index(input)
