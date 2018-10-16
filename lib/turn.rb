@@ -1,6 +1,6 @@
 def turn(board)
   puts "Please enter 1-9:"
-  input
+  input=0
   gets input
   index=input_to_index(input)
   move(board, index)
@@ -29,7 +29,7 @@ def move(board, index)
     board[index]="X"
     return board
   end
-  turn(board)
+  #turn(board)
 end
 
 def input_to_index(input)
