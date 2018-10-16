@@ -23,9 +23,9 @@ def valid_move?(board,index)
   return false
 end
 
-def move(board, index)
+def move(board, index, player="X")
   if(valid_move?(board,index))
-    board[index]="X"
+    board[index]=player
     return board
   end
   turn(board)
