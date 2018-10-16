@@ -3,7 +3,7 @@ def turn(board)
   input = gets
   index=input_to_index(input)
   move(board, index)
-  #display_board(board)
+  display_board(board)
 end
 
 def display_board(board)
@@ -29,7 +29,7 @@ def move(board, index)
     return board
   end
   turn(board)
-  display_board(board)
+  #display_board(board)
 end
 
 def input_to_index(input)
